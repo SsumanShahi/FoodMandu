@@ -104,6 +104,9 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
                 Toast.makeText(SignupActivity.this, "Registered", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
 
             @Override
